@@ -41,7 +41,13 @@ mysqli_close($llave);
                 <td>{$item['descripcion']}</td>
                 <td>{$item['pvp']}</td>
                 <td style='color:$color'>{$item['disponible']}</td>
-                <td>Acciones</td>
+                <td>
+                <form action="borrar.php" method="POST">
+                <a href="update.php?id={$item['id']}">Actualizar</a>&nbsp;
+                <input type="hidden" name="idArt" value="{$item['id']}" />
+                <button name="btn" onclick="return confirm('¿Desea borrar el artículo?')">BORRAR</button>
+                </form>
+                </td>
                 </tr>
                 TXT;
             }
