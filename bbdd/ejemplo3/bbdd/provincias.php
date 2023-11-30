@@ -1,0 +1,11 @@
+<?php
+$provincias=[
+    'Almeria',
+    'Cadiz',
+    'Cordoba',
+    'Granada',
+    'Huelva',
+    'Jaen',
+    'Malaga',
+    'Sevilla'
+];
